@@ -5,7 +5,7 @@
       "setup": "javac *.java",
       "run": "java -cp . Test",
       "input": "err-D(A(C)(A))(D(A))",
-      "output": "err:1",
+      "output": "err:2",
       "comparison": "included",
       "timeout": 1,
       "points": 2
@@ -25,7 +25,7 @@
       "setup": "javac *.java",
       "run": "java -cp . Test",
       "input": "err-D(A(A)(C))(D(A))",
-      "output": "err:0",
+      "output": "err:1",
       "comparison": "included",
       "timeout": 1,
       "points": 2

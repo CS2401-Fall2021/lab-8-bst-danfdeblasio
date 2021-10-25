@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "err1",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "err-D(A(C)(A))(D(A))",
+      "output": "err:1",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "err2",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "err-null",
+      "output": "err:0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "err3",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "err-D(A(A)(C))(D(A))",
+      "output": "err:0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "dept1",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "depth-D(A(A)(C))(D(A))",
+      "output": "depth:3",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "items1",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "items-D(A(A)(C))(D(A))",
+      "output": "items:4",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "items-2",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "items-null",
+      "output": "items:0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "items-3",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "items-D(C(C)(C))(D(A))",
+      "output": "3",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "depth2",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "depth-D(C(C)(C))(D(A))",
+      "output": "depth:2",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "depth3",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "depth-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))",
+      "output": "depth:5",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "keep",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "keep-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))-2-4",
+      "output": "keep:false",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "keep2",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "keep-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))-6-4",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "keep3",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "keep-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))-6-.1",
+      "output": "keep:false",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

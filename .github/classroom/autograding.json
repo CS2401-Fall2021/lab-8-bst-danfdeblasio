@@ -24,8 +24,8 @@
       "name": "err3",
       "setup": "javac *.java",
       "run": "java -cp . Test",
-      "input": "err-D(B(A)(C))(F(E))",
-      "output": "err:0",
+      "input": "err-D(D(A)(C))(F(E))",
+      "output": "err:1",
       "comparison": "included",
       "timeout": 1,
       "points": 2

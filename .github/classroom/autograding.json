@@ -104,7 +104,7 @@
       "name": "keep2",
       "setup": "javac *.java",
       "run": "java -cp . Test",
-      "input": "keep-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))-10-4",
+      "input": "keep-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))-21-4",
       "output": "true",
       "comparison": "included",
       "timeout": 1,

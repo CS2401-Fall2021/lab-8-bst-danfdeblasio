@@ -24,8 +24,8 @@
       "name": "err3",
       "setup": "javac *.java",
       "run": "java -cp . Test",
-      "input": "err-D(A(A)(C))(D(A))",
-      "output": "err:2",
+      "input": "err-D(B(A)(C))(F(E))",
+      "output": "err:0",
       "comparison": "included",
       "timeout": 1,
       "points": 2
@@ -116,6 +116,16 @@
       "run": "java -cp . Test",
       "input": "keep-D(E(F(G(H)))(D))(D(D(D(D(D(D(D)))))))-6-.1",
       "output": "keep:false",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "err4",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "err-D(B(A)(C))(F(E)(F))",
+      "output": "err:0",
       "comparison": "included",
       "timeout": 10,
       "points": 2
